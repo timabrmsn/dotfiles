@@ -78,6 +78,7 @@ source $ZSH/auto_env.sh
 # User configuration
 
 alias vim=nvim
+alias lg=lazygit
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
