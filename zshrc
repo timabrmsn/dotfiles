@@ -74,11 +74,17 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/auto_env.sh
+source ~/.local_env.sh
 
 # User configuration
 
 alias vim=nvim
 alias lg=lazygit
+
+function ide {
+  tmux splitw -l 40% && tmux splitw -h -l 45% lazygit && vim
+}
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
