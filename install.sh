@@ -2,6 +2,9 @@
 
 # tmux
 cp tmux.conf ~/.tmux.conf
+if which wsl.exe >/dev/null; then
+  sed -i 's/pbcopy/clip.exe/g' ~/.tmux.conf
+fi
 
 # neovim
 mkdir -p ~/.config/nvim
