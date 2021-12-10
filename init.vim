@@ -9,7 +9,7 @@ Plug 'junegunn/fzf.vim'
 call plug#end()
 
 set clipboard+=unnamedplus
-set tabexpand
+set expandtab
 set si
 set shiftwidth=4
 
