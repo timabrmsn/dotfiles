@@ -1,6 +1,7 @@
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'psf/black', { 'branch': 'stable' }
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -24,4 +25,4 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 map <C-N> :NERDTreeToggle<CR>
-
+let g:NERDTreeWinSize=45
