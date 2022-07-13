@@ -9,6 +9,7 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
+set mouse=a
 set clipboard+=unnamedplus
 set expandtab
 set si
